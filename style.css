@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+:root {
+    --main-color: #F25041;
+    --sec-color: #323673;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    color: #222;
+}
+
+.navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+nav img {
+    border-radius: 50%;
+    margin-right: 10px;
+    padding-right: 5px;
+}
+
+.update {
+    margin-top: 6em;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.bg {
+    background-color: var(--sec-color) !important;
+}
+
+.bg-sec {
+    background-color: var(--main-color);
+}
+
+.container-fluid {
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.container-fluid a {
+    color: var(--main-color);
+}
+
+a.btn {
+    color: white;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: .3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.5em;
+    padding-top: 1em;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.2em;
+    padding-top: 1em;
+    font-weight: 500;
+}
+
+code {
+    font-size: 1em;
+    color: #777;
+}
+
+dd {
+    margin-left: 1em;
+}
+
+@media (min-width: 900px) {
+    .container-fluid {
+        width: 900px;
+    }
+
+    .lecons, .devs {
+        columns: 2;
+    }
+}
+
+/* Agreg */
+
+.lecons > p > a::before {
+    content: "Leçon ";
+}
+
+.liste > p::before {
+    content: "– ";
+}
+
+span.impasse::before {
+    content: "Leçon ";
+}
+
+span.impasse {
+    color: #888;
+}
+
+.lecons > p {
+    padding-left: 1em;
+    text-indent: -1em;
+}
